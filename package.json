@@ -1,0 +1,24 @@
+{
+  "name": "final-assignment-recetas-juan-cristina",
+  "version": "1.0.0",
+  "description": "\"\"\u001b[DFinal assignment of the Front-End Web UI Frameworks and Tools: Bootstrap 4 course\"",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanchoy30/final-assignment-recetas-juan-cristina.git"
+  },
+  "author": "Juan M. Choy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanchoy30/final-assignment-recetas-juan-cristina/issues"
+  },
+  "homepage": "https://github.com/juanchoy30/final-assignment-recetas-juan-cristina#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
