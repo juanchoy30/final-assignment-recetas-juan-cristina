@@ -1,0 +1,38 @@
+//Theme Colors  ref: https://www.sessions.edu/color-calculator/
+$principalColour: #0affbe;
+$secondaryColour: #cad1d0; //#ff0a2b
+$tertiaryColour: #ff740a;
+$fourthColour: #fc2a0a;
+$fithColour: #4e0afc;
+$lt-gray: lightgray;
+$font-color: black;
+
+//scss mixins
+@mixin padding-margin($up-down, $left-right) {
+    margin: 0px auto;
+    padding: $up-down $left-right;
+}
+
+
+//
+
+.jumbotron {
+    @include padding-margin(20px, 50px)
+    background-color: $secondaryColour;
+    color: black
+}
+
+.row-header {
+    @include padding-margin(0px, 0px)
+}
+
+.row-content {
+    @include padding-margin(30px, 20px)
+    min-height: 150px;
+}
+
+.footer {
+    @include padding-margin(20px, 50px)
+    background-color: $secondaryColour !important;
+    color: black;
+}
