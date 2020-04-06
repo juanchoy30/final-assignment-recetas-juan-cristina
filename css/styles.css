@@ -1,8 +1,8 @@
 .jumbotron {
   margin: 0px auto;
   padding: 20px 50px;
-  background-color: #cad1d0;
-  color: black; }
+  background-color: #ffb10a;
+  color: white; }
 
 .row-header {
   margin: 0px auto;
@@ -16,14 +16,34 @@
 .footer {
   margin: 0px auto;
   padding: 20px 50px;
-  background-color: #cad1d0;
+  background-color: #ffb10a;
   color: black; }
 
 .tab-content {
-  border-left: 1px solid lightgray;
-  border-right: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
   padding: 10px; }
 
-.margen {
-  margin: 0px 5px; }
+.card {
+  border: 2px solid #ff740a; }
+
+.card-header {
+  background-color: #fc2a0a;
+  color: white; }
+
+.nav-link {
+  color: #cad1d0; }
+
+.nav-link:hover {
+  color: #ff740a; }
+
+.nav-pills li a.active {
+  background-color: #ff740a !important; }
+
+.tab-pane li a, .tab-pane li a:visited {
+  color: black; }
+
+.tab-pane li a:hover {
+  text-decoration: none;
+  color: #0affbe; }
+
+.card-body .addcard {
+  background-color: blue; }

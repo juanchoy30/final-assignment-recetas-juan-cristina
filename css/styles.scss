@@ -1,11 +1,11 @@
 //Theme Colors  ref: https://www.sessions.edu/color-calculator/
-$principalColour: #0affbe;
-$secondaryColour: #cad1d0; //#ff0a2b
-$tertiaryColour: #ff740a;
-$fourthColour: #fc2a0a;
-$fithColour: #4e0afc;
+$primaryColor: #ff740a;
+$secondaryColor: #fc2a0a;
+$terciaryColor: #ffb10a;
 $lt-gray: lightgray;
 $font-color: black;
+$nonActiveColor: #cad1d0;
+$hoverColor: #0affbe;
 
 //scss mixins
 @mixin padding-margin($up-down, $left-right) {
@@ -18,8 +18,8 @@ $font-color: black;
 
 .jumbotron {
     @include padding-margin(20px, 50px);
-    background-color: $secondaryColour;
-    color: black;
+    background-color: $terciaryColor;
+    color: white;
 }
 
 .row-header {
@@ -33,17 +33,44 @@ $font-color: black;
 
 .footer {
     @include padding-margin(20px, 50px);
-    background-color: $secondaryColour;
+    background-color: $terciaryColor;
     color: black;
 }
 
 .tab-content {
-    border-left: 1px solid $lt-gray;
-    border-right: 1px solid $lt-gray;
-    border-bottom: 1px solid $lt-gray;
     padding: 10px;
 }
 
-.margen{
-    margin: 0px 5px;
+.card {
+    border: 2px solid $primaryColor;
+}
+
+.card-header {
+    background-color: $secondaryColor;
+    color: white;
+}
+
+.nav-link {
+    color: $nonActiveColor;
+}
+
+.nav-link:hover {
+    color: $primaryColor; 
+}
+
+.nav-pills li a.active {
+    background-color: $primaryColor !important;
+}
+
+.tab-pane li a, .tab-pane li a:visited {
+    color: black;
+}
+
+.tab-pane li a:hover {
+    text-decoration: none;
+    color: $hoverColor;
+}
+
+.card-body .addcard {
+    background-color: blue;
 }
