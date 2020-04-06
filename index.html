@@ -8,6 +8,10 @@
 
         <!-- Bootstrap CSS-->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/brands.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/solid.css">
         <!-- CSS -->
         <link rel="stylesheet" href="css/styles.css">
 
@@ -28,30 +32,154 @@
         </header>
 
         <div class="container">
-            <div class="row row-content">
-                <div class="col-12 col-sm-4 col-md-3">
-                    <h2>Las pizzas mas sabrosas</h2>
+            <div class="row">
+                <div class="col-12 col-sm-6  order-sm-last">
+                    <div class="row row-content justify-content-center">
+                        <div class="card">
+                            <h2 class="card-header mb-3">Catálogo rápido</h2>
+                            <div class="card-body">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#desayunos"
+                                           role="tab" data-toggle="tab"><i class="fas fa-bacon fa-lg"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#panaderia"
+                                           role="tab" data-toggle="tab"><i class="fas fa-bread-slice fa-lg"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#ensaladas"
+                                           role="tab" data-toggle="tab"><i class="fas fa-leaf fa-lg"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#carnes"
+                                           role="tab" data-toggle="tab"><i class="fas fa-drumstick-bite fa-lg"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#pescados"
+                                           role="tab" data-toggle="tab"><i class="fas fa-fish fa-lg"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#pizzas"
+                                           role="tab" data-toggle="tab"><i class="fas fa-pizza-slice fa-lg"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#hamburguesas"
+                                           role="tab" data-toggle="tab"><i class="fas fa-hamburger fa-lg"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#postres"
+                                           role="tab" data-toggle="tab"><i class="fas fa-ice-cream fa-lg"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade show active" id="desayunos">
+                                        <h4>Desayunos</h4>
+                                        <ul>
+                                            <li><a href="#">Panquecas</a></li>
+                                            <li><a href="#">Huevos Revueltos</a></li>
+                                            <li><a href="#">Huevos Fritos</a></li>
+                                            <li><a href="#">Huevos Revueltos</a></li>
+                                            <li><a href="#">Desayuno Criollo</a></li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="panaderia">
+                                        <h4>Panadería</h4>
+                                        <p></p>
+                                        <ul>
+                                            <li><a href="#">Pan canilla</a></li>
+                                            <li><a href="#">Pan francés</a></li>
+                                            <li><a href="#">Cachito de jamón</a></li>
+                                            <li><a href="#">Croasant</a></li>
+                                            <li><a href="#">Pastelito</a></li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="ensaladas">
+                                        <h4>Ensaladas</h4>
+                                        <p></p>
+                                        <ul>
+                                            <li><a href="#">Ensalada Cesar</a></li>
+                                            <li><a href="#">Ensalada de repollo y frutos secos</a></li>
+                                            <li><a href="#">Ensalada rusa</a></li>
+                                            <li><a href="#">Ensalada de lechuga y tomate</a></li>
+                                            <li><a href="#">Ensalada Capresa</a></li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="carnes">
+                                        <h4>Carnes</h4>
+                                        <p></p>
+                                        <ul>
+                                            <li><a href="#">Lomito a la plancha</a></li>
+                                            <li><a href="#">Carne al ajillo</a></li>
+                                            <li><a href="#">Pollo horneado</a></li>
+                                            <li><a href="#">Pollo a la plancha</a></li>
+                                            <li><a href="#">Lomito con champiñones</a></li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="pescados">
+                                        <h4>Pescados</h4>
+                                        <p></p>
+                                        <ul>
+                                            <li><a href="#">Merluza al horno</a></li>
+                                            <li><a href="#">Pescado empanizado frito</a></li>
+                                            <li><a href="#">Paella</a></li>
+                                            <li><a href="#">Pecado al ajillo</a></li>
+                                            <li><a href="#">Caldera de atún</a></li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="pizzas">
+                                        <h4>Pizzas</h4>
+                                        <p></p>
+                                        <ul>
+                                            <li><a href="#">Pizza Napolitana</a></li>
+                                            <li><a href="#">Pizza de Champiñones</a></li>
+                                            <li><a href="#">Pizza Rústica</a></li>
+                                            <li><a href="#">Pizza Margarita</a></li>
+                                            <li><a href="#">Pizza de Jamón</a></li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="hamburguesas">
+                                        <h4>Hamburguesas</h4>
+                                        <p></p>
+                                        <ul>
+                                            <li><a href="#">Hamburguesa Criolla</a></li>
+                                            <li><a href="#">Bacon Burger</a></li>
+                                            <li><a href="#">Smoked Burger</a></li>
+                                            <li><a href="#">Chili Burguer <i class="fas fa-pepper-hot fa-lg"></i></a></li>
+                                            <li><a href="#">Tequeño Burguer</a></li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="postres">
+                                        <h4>Postres</h4>
+                                        <p></p>
+                                        <ul>
+                                            <li><a href="#">Tiramisú</a></li>
+                                            <li><a href="#">Bolo de Marmol</a></li>
+                                            <li><a href="#">Quesillo</a></li>
+                                            <li><a href="#">Bienmesabe</a></li>
+                                            <li><a href="#">Scrumble de Manzana</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-8 col-md-9">
-                    <h3>Pizza Napolitana</h3>
-                    <p>La mejor de todas las pizzas, con tomates cherry, albahaca y queso parmesano. Dos versiones para la preparación de la masa. Te invitamos a probarla</p>
+                <div class="col-12 col-sm-6">
+                    <div class="row-content">
+                        <h2>Las pizzas mas sabrosas</h2>
+                        <h3>Pizza Napolitana</h3>
+                        <p>La mejor de todas las pizzas, con tomates cherry, albahaca y queso parmesano. Dos versiones para la preparación de la masa. Te invitamos a probarla</p>
+                    </div>
+                    <div class="row-content">
+                            <h2>Platos caseros <sub>Carne, pollo, pesacado</sub></h2>
+                            <p>Recetas caseras, para almuerzos y cenas. Platos completos para los paladares mas exigentes.</p>
+                    </div>
                 </div>
             </div>
-
             <div class="row row-content">
-                <div class="col-12 col-sm-4 col-md-3">
-                    <h2>Platos caseros</h2>
-                </div>
-                <div class="col-12 col-sm-8 col-md-9">
-                    <h3>Carne, pollo, pesacado</h3>
-                    <p>Recetas caseras, para almuerzos y cenas. Platos completos para los paladares mas exigentes.</p>
-                </div>
-            </div>
-
-            <div class="row  row-content">
                 <div class="col-12 col-sm-4 col-md-3">
                     <h2>Conoce a nuestros Chefs</h2>
-                    <p>Nuestos dos chefs son Ingenieros Mecánicos que se han dedicado a la cocina como hobbie.</p>
                 </div>
                 <div class="col-12 col-sm-8 col-md-9">
                     <h3>Ana Cristina de Brito</h3>
@@ -60,141 +188,6 @@
                     <p>Especialista en carnes y salsas.</p>
                 </div>
             </div>
-            
-            <div class="row row-content">
-                <div class=col-12>
-                    <h2>Catálogo rápido</h2>
-
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#desayunos"
-                               role="tab" data-toggle="tab">Desayunos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#panaderia"
-                               role="tab" data-toggle="tab">Panadería</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#vegetariano"
-                               role="tab" data-toggle="tab">Vegetariano</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#carnes"
-                               role="tab" data-toggle="tab">Carnes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pescados"
-                               role="tab" data-toggle="tab">Pescados</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pizzas"
-                               role="tab" data-toggle="tab">Pizzas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#hamburguesas"
-                               role="tab" data-toggle="tab">Hamburguesas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#postres"
-                               role="tab" data-toggle="tab">Postres</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane fade show active" id="desayunos">
-                        <h4>Desayunos</h4>
-                        <p>Para empezar el día</p>
-                        <ul>
-                            <li><a href="#">Panquecas</a></li>
-                            <li><a href="#">Huevos Revueltos</a></li>
-                            <li><a href="#">Huevos Fritos</a></li>
-                            <li><a href="#">Huevos Revueltos</a></li>
-                            <li><a href="#">Desayuno Criollo</a></li>
-                        </ul>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="panaderia">
-                        <h4>Panadería</h4>
-                        <p></p>
-                        <ul>
-                            <li><a href="#">Pan canilla</a></li>
-                            <li><a href="#">Pan francés</a></li>
-                            <li><a href="#">Cachito de jamón</a></li>
-                            <li><a href="#">Croasant</a></li>
-                            <li><a href="#">Pastelito</a></li>
-                        </ul>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="vegetariano">
-                        <h4>Panadería</h4>
-                        <p></p>
-                        <ul>
-                            <li><a href="#">Pan canilla</a></li>
-                            <li><a href="#">Pan francés</a></li>
-                            <li><a href="#">Cachito de jamón</a></li>
-                            <li><a href="#">Croasant</a></li>
-                            <li><a href="#">Pastelito</a></li>
-                        </ul>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="carnes">
-                        <h4>Panadería</h4>
-                        <p></p>
-                        <ul>
-                            <li><a href="#">Pan canilla</a></li>
-                            <li><a href="#">Pan francés</a></li>
-                            <li><a href="#">Cachito de jamón</a></li>
-                            <li><a href="#">Croasant</a></li>
-                            <li><a href="#">Pastelito</a></li>
-                        </ul>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="pescados">
-                        <h4>Panadería</h4>
-                        <p></p>
-                        <ul>
-                            <li><a href="#">Pan canilla</a></li>
-                            <li><a href="#">Pan francés</a></li>
-                            <li><a href="#">Cachito de jamón</a></li>
-                            <li><a href="#">Croasant</a></li>
-                            <li><a href="#">Pastelito</a></li>
-                        </ul>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="pizzas">
-                        <h4>Panadería</h4>
-                        <p></p>
-                        <ul>
-                            <li><a href="#">Pan canilla</a></li>
-                            <li><a href="#">Pan francés</a></li>
-                            <li><a href="#">Cachito de jamón</a></li>
-                            <li><a href="#">Croasant</a></li>
-                            <li><a href="#">Pastelito</a></li>
-                        </ul>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="hamburguesas">
-                        <h4>Panadería</h4>
-                        <p></p>
-                        <ul>
-                            <li><a href="#">Pan canilla</a></li>
-                            <li><a href="#">Pan francés</a></li>
-                            <li><a href="#">Cachito de jamón</a></li>
-                            <li><a href="#">Croasant</a></li>
-                            <li><a href="#">Pastelito</a></li>
-                        </ul>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="postres">
-                        <h4>Panadería</h4>
-                        <p></p>
-                        <ul>
-                            <li><a href="#">Pan canilla</a></li>
-                            <li><a href="#">Pan francés</a></li>
-                            <li><a href="#">Cachito de jamón</a></li>
-                            <li><a href="#">Croasant</a></li>
-                            <li><a href="#">Pastelito</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-
-
         </div>
 
         <footer class="footer">
@@ -205,9 +198,9 @@
                         <address>
                             Venezuela 1234, 1A <br>
                             C.A.B.A., Argentina <br>
-                            Tel.: +54 11 12345678 <br>
-                            Cel.: +54 9 11 98765432 <br>
-                            Email: <a href="mailto:recetas@gmail.com">recetas@gmail.com</a>
+                            <i class="fa fa-phone fa-lg"></i> +54 11 12345678 <br>
+                            <i class="fab fa-whatsapp fa-lg"></i> +54 9 11 98765432 <br>
+                            <i class="fa fa-envelope fa-lg"></i>:<a href="mailto:recetas@gmail.com">recetas@gmail.com</a>
                         </address>
                     </div>
                     <div class="col-5 col-sm-2 col-md-3">
@@ -220,16 +213,16 @@
                     </div>
                     <div class="col-12 col-sm-4 col-md-5">
                         <div>
-                            <a href="http://google.com/+">Google+</a>
-                            <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                            <a href="http://www.linkedin.com/in/">LinkedIn</a>
-                            <a href="http://twitter.com/">Twitter</a>
-                            <a href="http://youtube.com/">YouTube</a>
-                            <a href="mailto:">Mail</a>
+                            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fab fa-google-plus-g"></i></a>
+                            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" href="mailto:"><i class="fa fa-envelope-open-text"></i></a>   
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="row justify-content-center">
                     <div class="col-auto">
                         <p>© Copyright Recetas de Cristina y Juan</p>
                     </div>

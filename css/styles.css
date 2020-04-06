@@ -10,11 +10,20 @@
 
 .row-content {
   margin: 0px auto;
-  padding: 30px 20px;
-  min-height: 150px; }
+  padding: 20px 15px;
+  min-height: 170px; }
 
 .footer {
   margin: 0px auto;
   padding: 20px 50px;
-  background-color: #cad1d0 !important;
+  background-color: #cad1d0;
   color: black; }
+
+.tab-content {
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 10px; }
+
+.margen {
+  margin: 0px 5px; }

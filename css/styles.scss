@@ -17,22 +17,33 @@ $font-color: black;
 //
 
 .jumbotron {
-    @include padding-margin(20px, 50px)
+    @include padding-margin(20px, 50px);
     background-color: $secondaryColour;
-    color: black
+    color: black;
 }
 
 .row-header {
-    @include padding-margin(0px, 0px)
+    @include padding-margin(0px, 0px);
 }
 
 .row-content {
-    @include padding-margin(30px, 20px)
-    min-height: 150px;
+    @include padding-margin(20px, 15px);
+    min-height: 170px;
 }
 
 .footer {
-    @include padding-margin(20px, 50px)
-    background-color: $secondaryColour !important;
+    @include padding-margin(20px, 50px);
+    background-color: $secondaryColour;
     color: black;
+}
+
+.tab-content {
+    border-left: 1px solid $lt-gray;
+    border-right: 1px solid $lt-gray;
+    border-bottom: 1px solid $lt-gray;
+    padding: 10px;
+}
+
+.margen{
+    margin: 0px 5px;
 }
