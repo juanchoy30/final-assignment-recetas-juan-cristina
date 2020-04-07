@@ -69,8 +69,20 @@ $hoverColor: #0affbe;
 .tab-pane li a:hover {
     text-decoration: none;
     color: $hoverColor;
+    font-weight: bold;
 }
 
-.card-body .addcard {
-    background-color: blue;
+.linkStyled, .linkStyled:visited {
+    color: black;
+    font-size: 20px;
+}
+
+.linkStyled:hover {
+    text-decoration: none;
+    color: #0a4bff;
+    font-weight: bold;
+}
+
+.bg-grey {
+    background-color: $lt-gray;
 }
