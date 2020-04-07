@@ -4,8 +4,9 @@ $secondaryColor: #fc2a0a;
 $terciaryColor: #ffb10a;
 $lt-gray: lightgray;
 $font-color: black;
-$nonActiveColor: #cad1d0;
-$hoverColor: #0affbe;
+$nonActiveColor: gray;
+$hoverColor: #0a4bff;
+$hoverColor2: #0affbe;
 
 //scss mixins
 @mixin padding-margin($up-down, $left-right) {
@@ -16,9 +17,10 @@ $hoverColor: #0affbe;
 
 //
 
+//Header
 .jumbotron {
     @include padding-margin(20px, 50px);
-    background-color: $terciaryColor;
+    background: linear-gradient(135deg, $primaryColor 20%, $terciaryColor  60%, $secondaryColor);
     color: white;
 }
 
@@ -26,23 +28,29 @@ $hoverColor: #0affbe;
     @include padding-margin(0px, 0px);
 }
 
+//Article content
 .row-content {
     @include padding-margin(20px, 15px);
     min-height: 170px;
 }
 
+//Footer
 .footer {
     @include padding-margin(20px, 50px);
     background-color: $terciaryColor;
     color: black;
 }
 
+//Catalog content
 .tab-content {
     padding: 10px;
 }
 
+//Cards style
 .card {
     border: 2px solid $primaryColor;
+    border-radius: 10px;
+    overflow: hidden; //This avoids background content to overlap the rounded borders
 }
 
 .card-header {
@@ -62,6 +70,23 @@ $hoverColor: #0affbe;
     background-color: $primaryColor !important;
 }
 
+//nav menu on footer
+.linkStyled, .linkStyled:visited {
+    color: black;
+    font-size: 20px;
+}
+
+.linkStyled:hover {
+    text-decoration: none;
+    color: $hoverColor;
+    font-weight: bold;
+}
+
+//card on footer address
+.bg-grey {
+    background-color: $lt-gray;
+}
+
 .tab-pane li a, .tab-pane li a:visited {
     color: black;
 }
@@ -72,17 +97,4 @@ $hoverColor: #0affbe;
     font-weight: bold;
 }
 
-.linkStyled, .linkStyled:visited {
-    color: black;
-    font-size: 20px;
-}
 
-.linkStyled:hover {
-    text-decoration: none;
-    color: #0a4bff;
-    font-weight: bold;
-}
-
-.bg-grey {
-    background-color: $lt-gray;
-}

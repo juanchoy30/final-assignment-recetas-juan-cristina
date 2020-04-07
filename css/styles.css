@@ -1,7 +1,7 @@
 .jumbotron {
   margin: 0px auto;
   padding: 20px 50px;
-  background-color: #ffb10a;
+  background: linear-gradient(135deg, #ff740a 20%, #ffb10a 60%, #fc2a0a);
   color: white; }
 
 .row-header {
@@ -23,28 +23,22 @@
   padding: 10px; }
 
 .card {
-  border: 2px solid #ff740a; }
+  border: 2px solid #ff740a;
+  border-radius: 10px;
+  overflow: hidden; }
 
 .card-header {
   background-color: #fc2a0a;
   color: white; }
 
 .nav-link {
-  color: #cad1d0; }
+  color: gray; }
 
 .nav-link:hover {
   color: #ff740a; }
 
 .nav-pills li a.active {
   background-color: #ff740a !important; }
-
-.tab-pane li a, .tab-pane li a:visited {
-  color: black; }
-
-.tab-pane li a:hover {
-  text-decoration: none;
-  color: #0affbe;
-  font-weight: bold; }
 
 .linkStyled, .linkStyled:visited {
   color: black;
@@ -57,3 +51,11 @@
 
 .bg-grey {
   background-color: lightgray; }
+
+.tab-pane li a, .tab-pane li a:visited {
+  color: black; }
+
+.tab-pane li a:hover {
+  text-decoration: none;
+  color: #0a4bff;
+  font-weight: bold; }
