@@ -14,14 +14,36 @@ $hoverColor2: #0affbe;
     padding: $up-down $left-right;
 }
 
+//font functions
+@font-face {
+    font-family: 'head-title';
+    src: url('../fonts/lobster/lobster-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lobster/lobster-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'body-paragraph';
+    src: url('../fonts/kalam/kalam-light-webfont.woff2') format('woff2'),
+         url('../fonts/kalam/kalam-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 //
+
 
 //Header
 .jumbotron {
     @include padding-margin(20px, 50px);
     background: linear-gradient(135deg, $primaryColor 20%, $terciaryColor  60%, $secondaryColor);
     color: white;
+    font: 1.3em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-head {
+    font: 2em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .row-header {
@@ -32,6 +54,10 @@ $hoverColor2: #0affbe;
 .row-content {
     @include padding-margin(20px, 15px);
     min-height: 170px;
+}
+
+.row-content p {
+    font: 1.2em "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 //Footer
@@ -56,8 +82,10 @@ $hoverColor2: #0affbe;
 .card-header {
     background-color: $secondaryColor;
     color: white;
+    font: 2em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+//Fast catalog pill links style
 .nav-link {
     color: $nonActiveColor;
 }
@@ -70,10 +98,23 @@ $hoverColor2: #0affbe;
     background-color: $primaryColor !important;
 }
 
+//links inside pill tab
+
+.tab-pane li a, .tab-pane li a:visited {
+    color: black;
+    font: 1.2em "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.tab-pane li a:hover {
+    text-decoration: none;
+    color: $hoverColor;
+    font-weight: bold;
+}
+
 //nav menu on footer
 .linkStyled, .linkStyled:visited {
     color: black;
-    font-size: 20px;
+    font-size: 1.7em;
 }
 
 .linkStyled:hover {
@@ -86,15 +127,3 @@ $hoverColor2: #0affbe;
 .bg-grey {
     background-color: $lt-gray;
 }
-
-.tab-pane li a, .tab-pane li a:visited {
-    color: black;
-}
-
-.tab-pane li a:hover {
-    text-decoration: none;
-    color: $hoverColor;
-    font-weight: bold;
-}
-
-
