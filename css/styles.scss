@@ -38,7 +38,7 @@ $hoverColor2: #0affbe;
 .jumbotron {
     @include padding-margin(20px, 50px);
     background: linear-gradient(135deg, $primaryColor 20%, $terciaryColor  60%, $secondaryColor);
-    color: white;
+    color: black;
     font: 1.3em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
