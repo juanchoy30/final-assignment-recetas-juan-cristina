@@ -12,10 +12,17 @@
 
 .jumbotron {
   margin: 0px auto;
-  padding: 20px 50px;
+  padding: 35px 40px;
   background: linear-gradient(135deg, #ff740a 20%, #ffb10a 60%, #fc2a0a);
-  color: black;
+  color: #000000;
+  min-height: 210px;
   font: 1.3em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+@media screen and (max-width: 479px) {
+  /* start of phone styles */
+  /* It's possible to hide the image if the screen becomes too small */
+  .logo {
+    max-width: 40%; } }
 
 .font-head {
   font: 1.8em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -93,3 +100,17 @@
 
 .navbar-nav li a {
   font: 1.2em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.carousel-item {
+  height: 210px; }
+
+.carousel-item .carousel-image {
+  position: absolute;
+  min-height: 210px; }
+
+.carousel-item .paragraph {
+  font: 1.2em "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold; }
+
+.carousel-item .burger {
+  bottom: 0px !important; }

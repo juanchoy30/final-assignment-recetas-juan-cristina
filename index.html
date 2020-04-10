@@ -17,24 +17,64 @@
 
     </head>
     <body>
+ 
 
-        <!-- Header jumbotron -->
-        <header class="jumbotron">
-            <div class="container">
-                <div class="row row-header">
-                    <div class="col-12 col-sm-2">
-                        <img src="img/Logo-140x127.png">
+        
+    <header>
+        <!-- Carousel -->     
+        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Slideshow -->
+            <div class="carousel-inner bg-dark" role="listbox">
+                <div class="carousel-item active">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <div class="row row-header">
+                                <div class="col-12 col-sm-2">
+                                    <img class="logo" src="img/Logo-140x127.png" alt="Recetas de Cristina y Juan Logo">
+                                </div>
+                                <div class="col-12 col-sm-10 align-self-center">
+                                    <h1 class="font-head">Recetas de Cristina y Juan</h1>
+                                    <p class="d-none d-md-block">Un lugar para consultar las mejores recetas</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-10 align-self-center">
-                        <h1 class="font-head">Recetas de Cristina y Juan</h1>
-                        <p>Un lugar para consultar las mejores recetas</p>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid carousel-image" src="img/pizza-napolitana-carousel-1590x1026.jpg" alt="pizza napolitana">
+                    <div class="carousel-caption">
+                        <h2 class="font-head">Pizza Napolitana <span class="badge badge-pill badge-primary">1<sup>er</sup>Lugar</span></h2>
+                        <p class="d-none d-md-block paragraph">La mejor de todas las pizzas, con tomates cherry, albahaca y queso parmesano. Dos versiones para la preparación de la masa. Te invitamos a probarla</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid carousel-image burger" src="img/hamburguesa-carousel-1584x630.jpg" alt="Bacon burguer">
+                    <div class="carousel-caption text-black">
+                        <h2 class="font-head">Bacon Burger <span class="badge badge-pill badge-danger"><i class="fa fa-bacon"></i></span> <span class="badge badge-pill badge-info">BBK</h2>
+                        <p class="d-none d-md-block paragraph">Deliciosa hamburguesa con tocineta, pepinillos, carne de primera, salsa BBQ, queso fundido y cebolla caramelizada</p>
                     </div>
                 </div>
             </div>
-        </header>
+            <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </header>
+
+
+        
 
         <!-- Navigation bar -->
-        <nav class="navbar navbar-dark navbar-expand-sm bg-dark sticky-top">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
             <div class="container">
                 <a class="navbar-brand" href="#">CJ</a>
                 <div class="collapse navbar-collapse" id="Navbar">
@@ -54,7 +94,7 @@
 
                     <!-- search button -->
                     <form class="form-inline">
-                        <input class="form-control ml-sm-3 mr-sm-2" type="search" placeholder="Búsqueda" aria-label="search">
+                        <input class="form-control ml-3 mr-sm-2" type="search" placeholder="Búsqueda" aria-label="search">
                             <button class="btn btn-primary my-2 my-sm-0 mr-sm-2" type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
@@ -105,6 +145,7 @@
         </div>
 
         <div class="container">
+
             <div class="row row-content">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="row-content">
@@ -117,7 +158,7 @@
                             </div>
                             <div class="media-body">
                                 <h3 class="font-head">Pizza Napolitana <span class="badge badge-pill badge-primary">1<sup>er</sup>Lugar</span></h3>
-                                <p class="paragraph">La mejor de todas las pizzas, con tomates cherry, albahaca y queso parmesano. Dos versiones para la preparación de la masa. Te invitamos a probarla</p>
+                                <p>La mejor de todas las pizzas, con tomates cherry, albahaca y queso parmesano. Dos versiones para la preparación de la masa. Te invitamos a probarla</p>
                             </div>
                         </div>
                     </div>
@@ -131,7 +172,7 @@
                             </div>
                             <div class="media-body">    
                                 <h3 class="font-head">Carne, pollo, pesacado</h3>
-                                <p class="paragraph">Recetas caseras, para almuerzos y cenas. Platos completos para los paladares mas exigentes.</p>
+                                <p>Recetas caseras, para almuerzos y cenas. Platos completos para los paladares mas exigentes.</p>
                             </div>
                         </div>
                     </div>
@@ -333,15 +374,15 @@
                 </div>
                 <div class="col-12 col-sm-8 col-md-9">
                     <h3 class="font-head">Ana Cristina De Brito</h3>
-                    <p class="paragraph">Especialista en postres, masas, ensaladas y pescados.</p>
+                    <p>Especialista en postres, masas, ensaladas y pescados.</p>
                     <h3 class="font-head">Juan Miguel Choy</h3>
-                    <p class="paragraph">Especialista en carnes y salsas.</p>
+                    <p>Especialista en carnes y salsas.</p>
                 </div>
             </div>
         </div>
 
         <footer class="footer">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-5 col-lg-3 d-none d-md-block">
                         <div class="card">

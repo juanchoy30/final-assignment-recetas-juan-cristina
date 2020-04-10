@@ -8,6 +8,9 @@ $nonActiveColor: gray;
 $hoverColor: #0a4bff;
 $hoverColor2: #0affbe;
 
+//Height of carousel-jumbotron
+$minHeightJumboCarousel: 210px;
+
 //scss mixins
 @mixin padding-margin($up-down, $left-right) {
     margin: 0px auto;
@@ -36,10 +39,21 @@ $hoverColor2: #0affbe;
 
 //Header
 .jumbotron {
-    @include padding-margin(20px, 50px);
+    @include padding-margin(35px, 40px);
     background: linear-gradient(135deg, $primaryColor 20%, $terciaryColor  60%, $secondaryColor);
-    color: black;
+    color: #000000;
+    min-height: $minHeightJumboCarousel;
     font: 1.3em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+//logo in jumbotron carousel
+
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+    /* It's possible to hide the image if the screen becomes too small */
+    .logo {
+      max-width: 40%;
+    }
 }
 
 .font-head {
@@ -49,6 +63,8 @@ $hoverColor2: #0affbe;
 .font-head-big {
     font: 2.4em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+
 
 .badge {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -143,4 +159,24 @@ $hoverColor2: #0affbe;
 
 .navbar-nav li a {
     font: 1.2em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+//carousel
+
+.carousel-item {
+    height: $minHeightJumboCarousel;
+}
+
+.carousel-item .carousel-image {
+    position: absolute;
+    min-height: $minHeightJumboCarousel;
+}
+
+.carousel-item .paragraph {
+    font: 1.2em "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.carousel-item .burger {
+    bottom: 0px !important;
 }
