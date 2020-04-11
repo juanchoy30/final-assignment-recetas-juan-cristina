@@ -94,6 +94,7 @@ $minHeightJumboCarousel: 210px;
 
 .row-content p {
     font: 1.2em "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: justify;
 }
 
 //Footer
@@ -190,6 +191,13 @@ $minHeightJumboCarousel: 210px;
 
 .carousel-item .burger {
     bottom: 0px !important;
+}
+
+#carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
 }
 
 //address border bottom
