@@ -17,56 +17,9 @@
 
     </head>
     <body>
-        <header>
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <div class="row row-header">
-                        <div class="col-12 col-sm-2">
-                            <img class="logo" src="img/Logo-140x127.png" alt="Recetas de Cristina y Juan Logo">
-                        </div>
-                        <div class="col-12 col-sm-10 align-self-center">
-                            <h1 class="font-head">Recetas de Cristina y Juan</h1>
-                            <p class="d-none d-md-block">Un lugar para consultar las mejores recetas</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Navigation bar -->
-        <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="img/Logo-white.png" height="30" width="35" alt="icono"></a>
-                <div class="collapse navbar-collapse" id="Navbar">
-                    <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><span class="fa fa-home"></span> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info-circle"></span> Conóncenos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-utensils"></span> Catálogo</a></li> 
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-address-card"></span> Contacto</a></li> 
-                </ul>
 
-                <!-- Login button-->
-                    <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal">
-                            <span class="fas fa-sign-in-alt"></span> Login
-                        </a>
-                    </span>
-
-                    <!-- search button -->
-                    <form class="form-inline">
-                        <input class="form-control ml-3 mr-sm-2" type="search" placeholder="Búsqueda" aria-label="search">
-                        <button class="btn btn-primary my-2 my-sm-0 mr-sm-2" type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Collapse button for small screens -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </nav>
-
-         <!-- Login Modal -->
-         <div id="loginModal" class="modal fade" role="dialog">
+        <!-- Login Modal -->
+        <div id="loginModal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg" role="content">
                 <!-- Modal content-->
                 <div class="modal-content">
@@ -74,7 +27,7 @@
                         <h4 class="modal-title">Login </h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body bg-dark">
                         <form>
                             <div class="form-row">
                                 <div class="form-group col-sm-4">
@@ -103,6 +56,55 @@
             </div>
         </div>
 
+        <header>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <div class="row row-header">
+                        <div class="col-12 col-sm-2">
+                            <img class="logo" src="img/Logo-140x127.png" alt="Recetas de Cristina y Juan Logo">
+                        </div>
+                        <div class="col-12 col-sm-10 align-self-center">
+                            <h1 class="font-head">Recetas de Cristina y Juan</h1>
+                            <p class="d-none d-md-block">Un lugar para consultar las mejores recetas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/Logo-white.png" height="30" width="35" alt="icono"></a>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><span class="fa fa-home"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info-circle"></span> Conóncenos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html"><span class="fa fa-utensils"></span> Catálogo</a></li> 
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-address-card"></span> Contacto</a></li> 
+                </ul>
+
+                <!-- Login button-->
+                    <span class="navbar-text">
+                        <a data-toggle="modal" data-target="#loginModal">
+                            <span class="fas fa-sign-in-alt"></span> Login
+                        </a>
+                    </span>
+
+                    <!-- search button -->
+                    <form class="form-inline">
+                        <input class="form-control ml-3 mr-sm-2" type="search" placeholder="Búsqueda" aria-label="search">
+                        <button class="btn btn-primary my-2 my-sm-0 mr-sm-2" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Collapse button for small screens -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+
+        
         <div class="container">
             <div class="row">
                 <ol class="col-12 breadcrumb">
@@ -137,7 +139,7 @@
             <!-- Forms -->
             <div class="row row-content">
                 <div class="col-12">
-                <h3 class="font-head">Haznos saber tu opinión, envíanos tus sugerencias</h3>
+                <h3 class="font-head"><i class="fa fa-comments fa-lg"></i> Haznos saber tu opinión, envíanos tus sugerencias</h3>
                 </div>
                 <div class="col-12 col-md-9">
                     <form>
@@ -223,7 +225,7 @@
                         <ul class="list-unstyled">
                             <li><a class="linkStyled font-head" href="index.html"><span class="fa fa-home"></span> Home</a></li>   
                             <li><a class="linkStyled font-head" href="aboutus.html"><span class="fa fa-info-circle"></span> Conócenos</a></li>
-                            <li><a class="linkStyled font-head" href="#"><span class="fa fa-utensils"></span> Catálogo de recetas</a></li>
+                            <li><a class="linkStyled font-head" href="catalog.html"><span class="fa fa-utensils"></span> Catálogo de recetas</a></li>
                             <li><a class="linkStyled font-head" href="#"><span class="fa fa-address-card"></span> Contacto</a></li>
                         </ul>
                     </div>

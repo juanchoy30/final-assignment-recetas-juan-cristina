@@ -2,6 +2,7 @@
 $primaryColor: #ff740a;
 $secondaryColor: #fc2a0a;
 $terciaryColor: #ffb10a;
+$gradientColor: linear-gradient(135deg, $primaryColor 20%, $terciaryColor  60%, $secondaryColor);
 $lt-gray: lightgray;
 $font-color: black;
 $nonActiveColor: gray;
@@ -15,6 +16,19 @@ $minHeightJumboCarousel: 210px;
 @mixin padding-margin($up-down, $left-right) {
     margin: 0px auto;
     padding: $up-down $left-right;
+}
+
+@mixin radio-de-borde($radius) {
+    border-radius: $radius;
+    overflow: hidden; //This avoids background content to overlap the rounded borders
+}
+
+@mixin header-fonts($size) {
+    font: $size "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@mixin body-fonts($size) {
+    font: $size "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 //font functions
@@ -40,10 +54,9 @@ $minHeightJumboCarousel: 210px;
 //Header
 .jumbotron {
     @include padding-margin(35px, 40px);
-    background: linear-gradient(135deg, $primaryColor 20%, $terciaryColor  60%, $secondaryColor);
+    background: $gradientColor;
     color: #000000;
     min-height: $minHeightJumboCarousel;
-    font: 1.3em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 //logo in jumbotron carousel
@@ -58,11 +71,11 @@ $minHeightJumboCarousel: 210px;
 
 //fonts
 .font-head {
-    font: 1.8em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    @include header-fonts(1.8em);
 }
 
 .font-head-big {
-    font: 2.4em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    @include header-fonts(2.4em);
 }
 
 .btn-font {
@@ -77,9 +90,10 @@ $minHeightJumboCarousel: 210px;
 
 //breadcrumb
 .breadcrumb {
-    font: 1.4em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    @include header-fonts(1.4em);
     background-color: whitesmoke;
 }
+
 
 //row header
 .row-header {
@@ -92,9 +106,10 @@ $minHeightJumboCarousel: 210px;
     min-height: 170px;
 }
 
-.row-content p {
-    font: 1.2em "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.row-content p, .tab-pane li a, .tab-pane li a:visited, .form-group {
+    @include body-fonts(1.2em);
     text-align: justify;
+    color: black;
 }
 
 //Footer
@@ -112,14 +127,13 @@ $minHeightJumboCarousel: 210px;
 //Cards style
 .card {
     border: 2px solid $primaryColor;
-    border-radius: 10px;
-    overflow: hidden; //This avoids background content to overlap the rounded borders
+    @include radio-de-borde(10px);
 }
 
 .card-header {
     background-color: $secondaryColor;
     color: white;
-    font: 2em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    @include header-fonts(2em);
 }
 
 //Fast catalog pill links style
@@ -136,11 +150,6 @@ $minHeightJumboCarousel: 210px;
 }
 
 //links inside pill tab
-
-.tab-pane li a, .tab-pane li a:visited, .form-group {
-    color: black;
-    font: 1.2em "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 
 .tab-pane li a:hover {
     text-decoration: none;
@@ -165,12 +174,12 @@ $minHeightJumboCarousel: 210px;
     background-color: $lt-gray;
 }
 
-.navbar-brand {
-    font: 1.3em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.navbar-brand, .jumbotron {
+    @include header-fonts(1.3em);
 }
 
-.navbar-nav li a {
-    font: 1.2em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.navbar-nav li a, .navbar-text a, .modal-header, .modal-body {
+    @include header-fonts(1.2em);
 }
 
 //carousel
@@ -185,7 +194,7 @@ $minHeightJumboCarousel: 210px;
 }
 
 .carousel-item .paragraph {
-    font: 1.2em "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    @include body-fonts(1.2em);
     font-weight: bold;
 }
 
@@ -200,4 +209,17 @@ $minHeightJumboCarousel: 210px;
     z-index: 1;
 }
 
-//address border bottom
+//Modal
+
+.modal-header {
+    background: $gradientColor;
+}
+
+.modal-body, .close:hover {
+    color: white;
+}
+
+.modal-content {
+    @include radio-de-borde(10px);
+    box-shadow: 2px 15px 25px 10px #000000;
+}

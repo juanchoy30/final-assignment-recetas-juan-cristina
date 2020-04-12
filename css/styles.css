@@ -15,8 +15,7 @@
   padding: 35px 40px;
   background: linear-gradient(135deg, #ff740a 20%, #ffb10a 60%, #fc2a0a);
   color: #000000;
-  min-height: 210px;
-  font: 1.3em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  min-height: 210px; }
 
 @media screen and (max-width: 479px) {
   /* start of phone styles */
@@ -50,9 +49,10 @@
   padding: 20px 15px;
   min-height: 170px; }
 
-.row-content p {
+.row-content p, .tab-pane li a, .tab-pane li a:visited, .form-group {
   font: 1.2em "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: justify; }
+  text-align: justify;
+  color: black; }
 
 .footer {
   margin: 0px auto;
@@ -82,10 +82,6 @@
 .nav-pills li a.active {
   background-color: #ff740a !important; }
 
-.tab-pane li a, .tab-pane li a:visited, .form-group {
-  color: black;
-  font: 1.2em "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
 .tab-pane li a:hover {
   text-decoration: none;
   color: #0a4bff;
@@ -103,10 +99,10 @@
 .bg-grey {
   background-color: lightgray; }
 
-.navbar-brand {
+.navbar-brand, .jumbotron {
   font: 1.3em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.navbar-nav li a {
+.navbar-nav li a, .navbar-text a, .modal-header, .modal-body {
   font: 1.2em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .carousel-item {
@@ -128,3 +124,14 @@
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+.modal-header {
+  background: linear-gradient(135deg, #ff740a 20%, #ffb10a 60%, #fc2a0a); }
+
+.modal-body, .close:hover {
+  color: white; }
+
+.modal-content {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 15px 25px 10px #000000; }
