@@ -41,7 +41,7 @@
                                 <div class="col-sm-auto">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label"> Remember me
+                                        <label class="form-check-label shadow-text"> Remember me
                                         </label>
                                     </div>
                                 </div>
@@ -77,15 +77,15 @@
                 <a class="navbar-brand" href="index.html"><img src="img/Logo-white.png" height="30" width="35" alt="icono"></a>
                 <div class="collapse navbar-collapse" id="Navbar">
                     <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><span class="fa fa-home"></span> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info-circle"></span> Conóncenos</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-utensils"></span> Catálogo</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="contact.html"><span class="fa fa-address-card"></span> Contacto</a></li> 
+                    <li class="nav-item"><a class="nav-link shadow-text" href="index.html"><span class="fa fa-home"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link shadow-text" href="aboutus.html"><span class="fa fa-info-circle"></span> Conóncenos</a></li>
+                    <li class="nav-item active"><a class="nav-link shadow-text" href="#"><span class="fa fa-utensils"></span> Catálogo</a></li> 
+                    <li class="nav-item"><a class="nav-link shadow-text" href="contact.html"><span class="fa fa-address-card"></span> Contacto</a></li> 
                 </ul>
 
                 <!-- Login button-->
                     <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal">
+                        <a class="shadow-text" data-toggle="modal" data-target="#loginModal">
                             <span class="fas fa-sign-in-alt"></span> Login
                         </a>
                     </span>
@@ -111,67 +111,68 @@
                     <li class="breadcrumb-item active">Catálogo</li>
                 </ol>
                 <div class="col-12">
-                    <h3 class="font-head"><i class="fa fa-book fa-lg"></i> Catálogo</h3>
+                    <h3 class="font-head"><i class="fa fa-book fa-lg"></i> Catálogo de recetas</h3>
                     <hr>
                 </div>
             </div>
 
             <div class="row row-content">
-                <div class="col-12 col-sm-3">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria aria-orientation="vertical">
+                <div class="col-12 col-md-3">
+                    <div class="nav flex-column nav-pills sticky-side-bar" id="v-pills-tab" role="tablist" aria aria-orientation="vertical">
                         <a class="nav-link active" id="v-pills-desayunos-tab" data-toggle="pill" href="#v-pills-desayunos" role="tabs" aria-controls="v-pills-desyunos" aria-selected="true">
                             <div class="row pl-3"> <!-- I do this in order to hide the icon in small screens-->
-                                <i class="fas fa-bacon fa-lg d-none d-sm-block"></i>&nbspDesayunos
+                                <i class="fas fa-bacon fa-lg d-none d-lg-block"></i>&nbspDesayunos
                             </div>                            
                         </a>
                         <a class="nav-link" id="v-pills-panaderia-tab" data-toggle="pill" href="#v-pills-panaderia" role="tabs" aria-controls="v-pills-panaderia" aria-selected="false">
                             <div class="row pl-3">
-                                <i class="fas fa-bread-slice fa-lg d-none d-sm-block"></i>&nbspPanadería    
+                                <i class="fas fa-bread-slice fa-lg d-none d-lg-block"></i>&nbspPanadería    
                             </div>
-                        </a>
+                        </a>    
                         <a class="nav-link" id="v-pills-ensaladas-tab" data-toggle="pill" href="#v-pills-ensaladas" role="tabs" aria-controls="v-pills-ensaladas" aria-selected="false">
                             <div class="row pl-3">
-                                <i class="fas fa-leaf fa-lg d-none d-sm-block"></i>&nbspEnsaladas
+                                <i class="fas fa-leaf fa-lg d-none d-lg-block"></i>&nbspEnsaladas
                             </div>       
                         </a>
                         <a class="nav-link" id="v-pills-carnes-tab" data-toggle="pill" href="#v-pills-carnes" role="tabs" aria-controls="v-pills-carnes" aria-selected="false">
                             <div class="row pl-3">
-                                <i class="fas fa-drumstick-bite fa-lg d-none d-sm-block"></i>&nbspCarnes
+                                <i class="fas fa-drumstick-bite fa-lg d-none d-lg-block"></i>&nbspCarnes
                             </div>
                         </a>
                         <a class="nav-link" id="v-pills-pescados-tab" data-toggle="pill" href="#v-pills-pescados" role="tabs" aria-controls="v-pills-pescados" aria-selected="false">
                             <div class="row pl-3">
-                                <i class="fas fa-fish fa-lg d-none d-sm-block"></i>&nbspPescados
+                                <i class="fas fa-fish fa-lg d-none d-lg-block"></i>&nbspPescados
                             </div>
                         </a>
                         <a class="nav-link" id="v-pills-pizzas-tab" data-toggle="pill" href="#v-pills-pizzas" role="tabs" aria-controls="v-pills-pizzas" aria-selected="false">
                             <div class="row pl-3">
-                                <i class="fas fa-pizza-slice fa-lg d-none d-sm-block"></i>&nbspPizzas
+                                <i class="fas fa-pizza-slice fa-lg d-none d-lg-block"></i>&nbspPizzas
                             </div>
                         </a>
                         <a class="nav-link" id="v-pills-hamburguesas-tab" data-toggle="pill" href="#v-pills-hamburguesas" role="tabs" aria-controls="v-pills-hamburguesas" aria-selected="false">
                             <div class="row pl-3">
-                                <i class="fas fa-hamburger fa-lg d-none d-sm-block"></i>&nbspHamburguesas
+                                <i class="fas fa-hamburger fa-lg d-none d-lg-block"></i>&nbspHamburguesas
                             </div>       
                         </a>
                         <a class="nav-link" id="v-pills-postres-tab" data-toggle="pill" href="#v-pills-postres" role="tabs" aria-controls="v-pills-postres" aria-selected="false">
                             <div class="row pl-3">
-                                <i class="fas fa-ice-cream fa-lg d-none d-sm-block"></i>&nbspPostres
+                                <i class="fas fa-ice-cream fa-lg d-none d-lg-block"></i>&nbspPostres
                             </div>
                         </a>
                     </div>
                 </div>
                 <!-- Content -->
-                <div class="col-12 col-sm-9">
+                <div class="col-12 col-md-9">
                     <div class="tab-content" id="v-pills-tabContent"> <!-- imags download from https://unsplash.com/s/photos -->
+                        <!--Desayunos-->
                         <div class="tab-pane fade show active" id="v-pills-desayunos" role="tabpanel" aria-labelledby="v-pills-desayunos-tab">
                             <div class="row">
                                 <div class="col-12 col-sm-6">
                                     <div class="card bg-dark text-white border border-secondary mb-3">
-                                        <img src="img/catalog/desayunos/pan-huevo-frito-min.jpg" class="card-img" alt="huevo al nido">
+                                        <img src="img/catalog/desayunos/bagel.jpg" class="card-img" alt="bagels">
                                         <div class="card-img-overlay">
-                                          <h5 class="card-title shadow-text">Huevo al nido</h5>
-                                          <p class="card-text text-white shadow-text">Delicioso y facil de hacer.</p>
+                                          <h5 class="card-title shadow-text">Bagels</h5>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Un desayuno más elaborado.</p>
                                           <a href="#" class="btn btn-info btn-font">Receta</a>
                                         </div>
                                     </div>
@@ -181,8 +182,185 @@
                                         <img src="img/catalog/desayunos/panquecas-3.jpg" class="card-img" alt="Panquecas con miel y arandanos">
                                         <div class="card-img-overlay">
                                           <h5 class="card-title shadow-text">Panquecas con miel y arándanos</h5>
-                                          <p class="card-text text-white shadow-text">Para un desayuno dulce.</p>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Para un desayuno dulce.</p>
                                           <a href="#" class="btn btn-info btn-font">Receta</a>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="card bg-dark text-white border border-secondary mb-3">
+                                        <img src="img/catalog/desayunos/wafles-de-avena.jpg" class="card-img" alt="Wafles de avena">
+                                        <div class="card-img-overlay">
+                                          <h5 class="card-title shadow-text">Wafles de avena</h5>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Integrales, con avena y miel.</p>
+                                          <a href="#" class="btn btn-info btn-font">Receta</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="row">
+                                        <div class="card bg-dark text-white border border-secondary mb-3">
+                                            <img src="img/catalog/desayunos/pan-huevo-frito-min.jpg" class="card-img" alt="huevo al nido">
+                                            <div class="card-img-overlay">
+                                                <h5 class="card-title shadow-text">Huevo al nido</h5>
+                                                <p class="card-text text-white shadow-text d-none d-sm-block">Delicioso y facil de hacer.</p>
+                                                <a href="#" class="btn btn-info btn-font">Receta</a>
+                                            </div>
+                                        </div>
+                                        <div class="card bg-dark text-white border border-secondary mb-3">
+                                            <img src="img/catalog/desayunos/desayuno-americano.jpg" class="card-img" alt="Desayuno Americano">
+                                            <div class="card-img-overlay">
+                                                <h5 class="card-title shadow-text">Desayuno Americano</h5>
+                                                <p class="card-text text-white shadow-text d-none d-sm-block">Típico desayuno Americano.</p>
+                                                <a href="#" class="btn btn-info btn-font">Receta</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <!--panadería-->
+                        <div class="tab-pane fade" id="v-pills-panaderia" role="tabpanel" aria-labelledby="v-pills-panaderia-tab">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="card bg-dark text-white border border-secondary mb-3">
+                                        <img src="img/catalog/panaderia/pan-frances.jpg" class="card-img" alt="pan frances">
+                                        <div class="card-img-overlay">
+                                          <h5 class="card-title shadow-text">Pan francés</h5>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Masa suave y corteza crocante.</p>
+                                          <a href="#" class="btn btn-info btn-font">Receta</a>
+                                        </div>
+                                    </div>
+                                </div>   
+                                <div class="col-12 col-sm-6">
+                                    <div class="card bg-dark text-white border border-secondary mb-3">
+                                        <img src="img/catalog/panaderia/medialunas.jpg" class="card-img" alt="media lunas">
+                                        <div class="card-img-overlay">
+                                          <h5 class="card-title shadow-text">Media lunas</h5>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Suaves y esponjosas, típico croasant Argentino.</p>
+                                          <a href="#" class="btn btn-info btn-font">Receta</a>
+                                        </div>
+                                    </div>
+                                </div>                             
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="card bg-dark text-white border border-secondary mb-3">
+                                        <img src="img/catalog/panaderia/galletas-choco-chips.jpg" class="card-img" alt="Galletas con chispas de chocolate">
+                                        <div class="card-img-overlay">
+                                          <h5 class="card-title shadow-text">Galletas con chispas de chocolate</h5>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Crocantes, ideales para comer con leche o café.</p>
+                                          <a href="#" class="btn btn-info btn-font">Receta</a>
+                                        </div>
+                                    </div>
+                                </div>      
+                                <div class="col-12 col-sm-6">
+                                    <div class="row">
+                                        <div class="card bg-dark text-white border border-secondary mb-3">
+                                            <img src="img/catalog/panaderia/pan-dulce.jpg" class="card-img" alt="Pan dulce">
+                                            <div class="card-img-overlay">
+                                              <h5 class="card-title shadow-text">Pan dulce</h5>
+                                              <p class="card-text text-white shadow-text d-none d-sm-block">Con chispas de chocolate, pasas o frutas confitadas.</p>
+                                              <a href="#" class="btn btn-info btn-font">Receta</a>
+                                            </div>
+                                        </div> 
+                                        <div class="card bg-dark text-white border border-secondary mb-3">
+                                            <img src="img/catalog/panaderia/pan-gallego.jpg" class="card-img" alt="Pan gallego">
+                                            <div class="card-img-overlay">
+                                              <h5 class="card-title shadow-text">Pan gallego</h5>
+                                              <p class="card-text text-white shadow-text d-none d-sm-block">Corteza extremadamente crocante, masa interna suave y esponjosa.</p>
+                                              <a href="#" class="btn btn-info btn-font">Receta</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+
+                        <!--ensaladas-->
+                        <div class="tab-pane fade" id="v-pills-ensaladas" role="tabpanel" aria-labelledby="v-pills-ensaladas-tab">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="card bg-dark text-white border border-secondary mb-3">
+                                        <img src="img/catalog/ensaladas/ensalada-lechuga-garbanzos.jpg" class="card-img" alt="Ensalada de frutas">
+                                        <div class="card-img-overlay">
+                                          <h5 class="card-title shadow-text">Ensalada de frutas</h5>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Un contorno refrescante.</p>
+                                          <a href="#" class="btn btn-info btn-font">Receta</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="card bg-dark text-white border border-secondary mb-3">
+                                        <img src="img/catalog/ensaladas/aguacate-salad.jpg" class="card-img" alt="Ensalada de albahaca y arandanos">
+                                        <div class="card-img-overlay">
+                                          <h5 class="card-title shadow-text">Ensalada de albahaca y arandanos</h5>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Una opción práctica y saludable.</p>
+                                          <a href="#" class="btn btn-info btn-font">Receta</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="card bg-dark text-white border border-secondary mb-3">
+                                        <img src="img/catalog/ensaladas/enalada-de-frutas.jpg" class="card-img" alt="Ensalada de frutas">
+                                        <div class="card-img-overlay">
+                                          <h5 class="card-title shadow-text">Ensalada de frutas</h5>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Un contorno refrescante.</p>
+                                          <a href="#" class="btn btn-info btn-font">Receta</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="card bg-dark text-white border border-secondary mb-3">
+                                        <img src="img/catalog/ensaladas/ensalada-albahaca-arandanos-tomates.jpg" class="card-img" alt="Ensalada de albahaca y arandanos">
+                                        <div class="card-img-overlay">
+                                          <h5 class="card-title shadow-text">Ensalada de albahaca y arandanos</h5>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Una opción práctica y saludable.</p>
+                                          <a href="#" class="btn btn-info btn-font">Receta</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Carnes-->
+                        <div class="tab-pane fade" id="v-pills-carnes" role="tabpanel" aria-labelledby="v-pills-carnes-tab">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="card bg-dark text-white border border-secondary mb-3">
+                                        <img src="img/catalog/carnes/costillas-a-la-parrilla.jpg" class="card-img" alt="Costillas a la parrilla">
+                                        <div class="card-img-overlay">
+                                          <h5 class="card-title shadow-text">Costillas a la parrilla</h5>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Costillas de res a la parrilla.</p>
+                                          <a href="#" class="btn btn-info btn-font">Receta</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="row">
+                                        <div class="card bg-dark text-white border border-secondary mb-3">
+                                            <img src="img/catalog/carnes/lomito-al-ajillo.jpg" class="card-img" alt="Lomito al ajillo">
+                                            <div class="card-img-overlay">
+                                              <h5 class="card-title shadow-text">Lomito al ajillo</h5>
+                                              <p class="card-text text-white shadow-text d-none d-sm-block">Jugosa carne de res con ajo y especias.</p>
+                                              <a href="#" class="btn btn-info btn-font">Receta</a>
+                                            </div>
+                                        </div>
+                                        <div class="card bg-dark text-white border border-secondary mb-3">
+                                            <img src="img/catalog/carnes/costillas-bbq.jpg" class="card-img" alt="Costillas bbq">
+                                            <div class="card-img-overlay">
+                                              <h5 class="card-title shadow-text">Costillas BBQ</h5>
+                                              <p class="card-text text-white shadow-text d-none d-sm-block">Costillas de cerdo con salsa BBQ.</p>
+                                              <a href="#" class="btn btn-info btn-font">Receta</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -190,28 +368,80 @@
                             <div class="row">
                                 <div class="col-12 col-sm-6">
                                     <div class="card bg-dark text-white border border-secondary mb-3">
-                                        <img src="img/catalog/desayunos/bagel.jpg" class="card-img" alt="bagels">
+                                        <img src="img/catalog/carnes/pinchos.jpg" class="card-img" alt="Pinchos">
                                         <div class="card-img-overlay">
-                                          <h5 class="card-title shadow-text">Bagels</h5>
-                                          <p class="card-text text-white shadow-text">Un desayuno más elaborado.</p>
+                                          <h5 class="card-title shadow-text">Pinchos a la parrilla</h5>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Espetada de carne y pollo a la parrilla.</p>
                                           <a href="#" class="btn btn-info btn-font">Receta</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="card bg-dark text-white border border-secondary mb-3">
-                                        <img src="img/catalog/desayunos/desayuno-americano.jpg" class="card-img" alt="Desayuno Americano">
+                                        <img src="img/catalog/carnes/pollo-asado.jpg" class="card-img" alt="Pollo asado">
                                         <div class="card-img-overlay">
-                                          <h5 class="card-title shadow-text">Desayuno Americano</h5>
-                                          <p class="card-text text-white shadow-text">Típico desayuno Americano.</p>
+                                          <h5 class="card-title shadow-text">Pollo asado</h5>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Condimentado con especias, vejetales y salsa.</p>
                                           <a href="#" class="btn btn-info btn-font">Receta</a>
                                         </div>
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
-                    </div>
+
+                        <!--pescados-->
+                        <div class="tab-pane fade" id="v-pills-pescados" role="tabpanel" aria-labelledby="v-pills-pescados-tab">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="card bg-dark text-white border border-secondary mb-3">
+                                        <img src="img/catalog/pescados/salmón-al-ajillo.jpg" class="card-img" alt="Salmón al ajillo">
+                                        <div class="card-img-overlay">
+                                          <h5 class="card-title shadow-text">Salmón al ajillo</h5>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Churrasco de salmón con especias y salsa especial.</p>
+                                          <a href="#" class="btn btn-info btn-font">Receta</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                   <div class="row">
+                                    <div class="card bg-dark text-white border border-secondary mb-3">
+                                        <img src="img/catalog/pescados/camarones-tempurizados.jpg" class="card-img" alt="Camarones tempura">
+                                        <div class="card-img-overlay">
+                                          <h5 class="card-title shadow-text">Camarones tempura  <span class="fas fa-pepper-hot"></span></h5>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Empanizados con una mezcla picante especial.</p>
+                                          <a href="#" class="btn btn-info btn-font">Receta</a>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-dark text-white border border-secondary mb-3">
+                                        <img src="img/catalog/pescados/paella.jpg" class="card-img" alt="paella">
+                                        <div class="card-img-overlay">
+                                          <h5 class="card-title shadow-text">Paella</h5>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Arroz especial, con mariscos: camarones, calamares, cangrejo, pulpo, ostras.</p>
+                                          <a href="#" class="btn btn-info btn-font">Receta</a>
+                                        </div>
+                                    </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="card bg-dark text-white border border-secondary mb-3">
+                                        <img src="img/catalog/pescados/pescado-empanizado.jpg" class="card-img" alt="Milanesa de merluza">
+                                        <div class="card-img-overlay">
+                                          <h5 class="card-title shadow-text">Milanesa de merluza</h5>
+                                          <p class="card-text text-white shadow-text d-none d-sm-block">Filete de merluza frito.</p>
+                                          <a href="#" class="btn btn-info btn-font">Receta</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>  
                 </div>
             </div>
 

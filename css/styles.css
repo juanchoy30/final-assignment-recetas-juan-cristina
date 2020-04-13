@@ -71,7 +71,8 @@
 .card-header {
   background-color: #fc2a0a;
   color: white;
-  font: 2em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+  font: 2em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  text-shadow: 5px 3px 5px #000000; }
 
 .nav-link {
   color: gray; }
@@ -142,3 +143,11 @@
 
 .shadow-text {
   text-shadow: 5px 3px 5px #000000; }
+
+.btn {
+  box-shadow: 5px 3px 5px #000000; }
+
+.sticky-side-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem; }

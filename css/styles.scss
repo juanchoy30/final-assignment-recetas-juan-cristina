@@ -134,6 +134,7 @@ $minHeightJumboCarousel: 210px;
     background-color: $secondaryColor;
     color: white;
     @include header-fonts(2em);
+    text-shadow: 5px 3px 5px #000000;
 }
 
 //Fast catalog pill links style
@@ -233,4 +234,14 @@ $minHeightJumboCarousel: 210px;
 
 .shadow-text {
     text-shadow: 5px 3px 5px #000000;
+}
+
+.btn {
+    box-shadow: 5px 3px 5px #000000;
+}
+
+.sticky-side-bar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
 }
