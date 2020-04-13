@@ -24,11 +24,11 @@ $minHeightJumboCarousel: 210px;
 }
 
 @mixin header-fonts($size) {
-    font: $size "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: $size "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 @mixin body-fonts($size) {
-    font: $size "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: $size "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 //font functions
@@ -145,13 +145,13 @@ $minHeightJumboCarousel: 210px;
     color: $primaryColor; 
 }
 
-.nav-pills li a.active {
+.nav-pills li a .active, .nav-pills .active {
     background-color: $primaryColor !important;
 }
 
 //links inside pill tab
 
-.tab-pane li a:hover {
+.tab-pane li a:hover  {
     text-decoration: none;
     color: $hoverColor;
     font-weight: bold;
@@ -163,10 +163,10 @@ $minHeightJumboCarousel: 210px;
     font-size: 1.7em;
 }
 
-.linkStyled:hover {
-    text-decoration: none;
+.linkStyled:hover, .figure-caption:hover, .image-link:hover {
+    text-decoration: none !important;
     color: $hoverColor;
-    font-weight: bold;
+    font-weight: bold;  
 }
 
 //card on footer address
@@ -174,11 +174,11 @@ $minHeightJumboCarousel: 210px;
     background-color: $lt-gray;
 }
 
-.navbar-brand, .jumbotron {
-    @include header-fonts(1.3em);
+.navbar-brand, .jumbotron, #v-pills-tab .nav-link, .card-title {
+    @include header-fonts(1.3em); 
 }
 
-.navbar-nav li a, .navbar-text a, .modal-header, .modal-body {
+.navbar-nav li a, .navbar-text a, .modal-header, .modal-body, .btn-font {
     @include header-fonts(1.2em);
 }
 
@@ -222,4 +222,15 @@ $minHeightJumboCarousel: 210px;
 .modal-content {
     @include radio-de-borde(10px);
     box-shadow: 2px 15px 25px 10px #000000;
+}
+
+//Navigation pills catalog vertical
+
+.figure-caption, .figure-caption:visited {
+    color: black;
+    @include header-fonts(1.7em);
+}
+
+.shadow-text {
+    text-shadow: 5px 3px 5px #000000;
 }

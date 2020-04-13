@@ -24,10 +24,10 @@
     max-width: 40%; } }
 
 .font-head {
-  font: 1.8em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font: 1.8em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
 
 .font-head-big {
-  font: 2.4em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font: 2.4em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
 
 .btn-font {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -37,7 +37,7 @@
   font-size: 17px; }
 
 .breadcrumb {
-  font: 1.4em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 1.4em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   background-color: whitesmoke; }
 
 .row-header {
@@ -50,7 +50,7 @@
   min-height: 170px; }
 
 .row-content p, .tab-pane li a, .tab-pane li a:visited, .form-group {
-  font: 1.2em "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 1.2em "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   text-align: justify;
   color: black; }
 
@@ -71,7 +71,7 @@
 .card-header {
   background-color: #fc2a0a;
   color: white;
-  font: 2em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font: 2em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
 
 .nav-link {
   color: gray; }
@@ -79,7 +79,7 @@
 .nav-link:hover {
   color: #ff740a; }
 
-.nav-pills li a.active {
+.nav-pills li a .active, .nav-pills .active {
   background-color: #ff740a !important; }
 
 .tab-pane li a:hover {
@@ -91,19 +91,19 @@
   color: black;
   font-size: 1.7em; }
 
-.linkStyled:hover {
-  text-decoration: none;
+.linkStyled:hover, .figure-caption:hover, .image-link:hover {
+  text-decoration: none !important;
   color: #0a4bff;
   font-weight: bold; }
 
 .bg-grey {
   background-color: lightgray; }
 
-.navbar-brand, .jumbotron {
-  font: 1.3em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.navbar-brand, .jumbotron, #v-pills-tab .nav-link, .card-title {
+  font: 1.3em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
 
-.navbar-nav li a, .navbar-text a, .modal-header, .modal-body {
-  font: 1.2em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.navbar-nav li a, .navbar-text a, .modal-header, .modal-body, .btn-font {
+  font: 1.2em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
 
 .carousel-item {
   height: 210px; }
@@ -113,7 +113,7 @@
   min-height: 210px; }
 
 .carousel-item .paragraph {
-  font: 1.2em "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 1.2em "body-paragraph", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: bold; }
 
 .carousel-item .burger {
@@ -135,3 +135,10 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 2px 15px 25px 10px #000000; }
+
+.figure-caption, .figure-caption:visited {
+  color: black;
+  font: 1.7em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+
+.shadow-text {
+  text-shadow: 5px 3px 5px #000000; }
