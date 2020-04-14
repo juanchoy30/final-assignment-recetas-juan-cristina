@@ -148,6 +148,8 @@ $minHeightJumboCarousel: 210px;
 
 .nav-pills li a .active, .nav-pills .active {
     background-color: $primaryColor !important;
+    text-shadow: 5px 3px 5px #000000;
+    box-shadow: 5px 3px 5px #000000;
 }
 
 //links inside pill tab
@@ -244,4 +246,9 @@ $minHeightJumboCarousel: 210px;
     position: -webkit-sticky;
     position: sticky;
     top: 4rem;
+}
+
+//Catalog
+.padding-0 {
+    padding-left: 0;
 }

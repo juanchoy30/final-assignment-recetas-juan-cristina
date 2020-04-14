@@ -81,7 +81,9 @@
   color: #ff740a; }
 
 .nav-pills li a .active, .nav-pills .active {
-  background-color: #ff740a !important; }
+  background-color: #ff740a !important;
+  text-shadow: 5px 3px 5px #000000;
+  box-shadow: 5px 3px 5px #000000; }
 
 .tab-pane li a:hover {
   text-decoration: none;
@@ -151,3 +153,6 @@
   position: -webkit-sticky;
   position: sticky;
   top: 4rem; }
+
+.padding-0 {
+  padding-left: 0; }
