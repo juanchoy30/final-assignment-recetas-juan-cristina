@@ -156,3 +156,6 @@
 
 .padding-0 {
   padding-left: 0; }
+
+.example-popover {
+  font: 2em "head-title", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
