@@ -194,6 +194,7 @@ $minHeightJumboCarousel: 210px;
 .carousel-item .carousel-image {
     position: absolute;
     min-height: $minHeightJumboCarousel;
+    width: 100%;
 }
 
 .carousel-item .paragraph {
