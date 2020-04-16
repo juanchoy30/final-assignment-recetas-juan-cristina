@@ -34,16 +34,16 @@ $minHeightJumboCarousel: 210px;
 //font functions
 @font-face {
     font-family: 'head-title';
-    src: url('../fonts/lobster/lobster-regular-webfont.woff2') format('woff2'),
-         url('../fonts/lobster/lobster-regular-webfont.woff') format('woff');
+    src: url('../fonts/lobster-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lobster-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'body-paragraph';
-    src: url('../fonts/kalam/kalam-light-webfont.woff2') format('woff2'),
-         url('../fonts/kalam/kalam-light-webfont.woff') format('woff');
+    src: url('../fonts/kalam-light-webfont.woff2') format('woff2'),
+         url('../fonts/kalam-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
