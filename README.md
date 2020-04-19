@@ -25,12 +25,13 @@ be divided and positioned.
   In addition to the jumbotron, carousel and nav pills I also used bootstrap libraries for the navigation bar, which I also stuck it to the top of the webpage. A modal for login, the menu collapse button for small screens so the page became mobile interactive. I uploaded font from google and icons from font awesome, to give it the look I pretended. I used the media class for images with text in the index page. I put the catalog and the address on the index page inside of cards because I liked the way they looked and also because I wanted to separate and highlight their content from the rest of the page. I also used the breadcrumb and a form for user´s feedback.
   
   References
-• Front-End Web UI Frameworks and Tools: Bootstrap 4 by The Hong Kong University of Science and Technology https://www.coursera.org/learn/bootstrap-4/home/welcome
-• Bootstrap 4 https://getbootstrap.com/docs/4.4/getting-started/introduction/
-• https://wireframe.cc/
-• Font awesome https://fontawesome.com/
-• Google fonts https://fonts.google.com/
-• Unsplash: Free images https://unsplash.com/
-• Image reducer http://webresizer.com/resizer/?lang=es
-• https://www.w3schools.com/bootstrap4/
-• MDN web docs https://developer.mozilla.org/en-US/
+  
+    • Front-End Web UI Frameworks and Tools: Bootstrap 4 by The Hong Kong University of Science and Technology https://www.coursera.org/learn/bootstrap-4/home/welcome
+    • Bootstrap 4 https://getbootstrap.com/docs/4.4/getting-started/introduction/
+    • https://wireframe.cc/
+    • Font awesome https://fontawesome.com/
+    • Google fonts https://fonts.google.com/
+    • Unsplash: Free images https://unsplash.com/
+    • Image reducer http://webresizer.com/resizer/?lang=es
+    • https://www.w3schools.com/bootstrap4/
+    • MDN web docs https://developer.mozilla.org/en-US/
